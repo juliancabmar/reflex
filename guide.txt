@@ -1,0 +1,23 @@
+# Import functions
+# Import config values
+# Verify if has new records on record path and if is some add to dbFile with the default average
+# Wellcome message
+# Ask to enter categories separated by comma and press enter (empty = all)
+# Start Loop
+    # Filter dbFile with categories and send value to currentDb variable
+    # Wait with a prompt till the user is ready to begin
+    # Sort db by average (high to low) <<<A>>>
+    # Get the $averageTime of the top item from db
+    # Create audio file list
+    # Show a "Audio is playing now..." prompt
+    # Play the first file on db list
+    # Get the current date secs
+    # Show "Click any char for response"
+    # Get the timeElapsed
+    # Ask if the response was correct
+    # If the response was correct
+    #   averageTime = (averageTime + timeMeasure) / 2
+    # Else
+    #   averageTime = averageTime * (1 + penalty)
+    # Update db with the new average
+# En Loop

@@ -1,0 +1,71 @@
+function getInput {
+    prompt=$1
+    
+    echo -n $prompt
+    read -e -t 0
+    read -n1 -s
+}
+
+function addNews {
+        recordsPath=$1
+        dbFile=$2
+        defaultAverage=$3
+
+        filesList=$(ls -1 $recordsPath | cut -d "." -f 1)
+        db=$(cut -d " " -f 1,2 $dbFile --output-delimiter "_") 
+
+        news=$(echo -e "$filesList""\n""$db" | sort | uniq -u)
+        #echo -e "\n\nLISTA\n$filesList\n\nDB\n$db\n\nNEWS\n$news\n\n"
+        
+        for newFile in $(echo "$news"); do
+                echo $(echo "$newFile" | sed "s/_/ /") "$defaultAverage" >> $dbFile
+        done
+        #echo "NUEVA DB"
+        #cat $dbFile
+}
+
+function filterByCategories {
+    dbFile=$1
+    categories=$2
+    
+    if [[ $# == "1" ]]; then
+        cat $dbFile
+    else
+        grep "$(echo $categories | sed 's/,/\\|/')" $dbFile
+    fi
+}
+
+function sortDb {
+    db=$1
+    echo "$db" | sort -t " " -r -n -k 3
+}
+
+function createAudioFileList {
+    db=$1
+    fileExtension=$2
+
+    echo "$db" | cut -d " " -f 1,2 | sed -e "s/ /_/ ; s/\$/$fileExtension/"
+}
+
+function playFirstFile {
+    db=$1
+    filePath=$2
+
+    file=$(echo "$db" | head -n 1)
+    play-audio $(echo "$filePath/$file")
+}
+
+function getAverageTime {
+    db=$1
+
+    echo "$db" | head -n 1 | cut -d " " -f 3
+}
+
+function updateDb {
+    dbKey=$1
+    dbFile=$2
+    newAverage=$3
+    #echo $dbFile
+    #echo $dbKey
+    sed -i "s/$dbKey.*/$dbKey $newAverage/" $dbFile > dbFile
+}

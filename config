@@ -1,0 +1,5 @@
+recordsPath=/storage/emulated/0/Reflex
+dbFile=./db.txt
+audioFileExtension=.m4a
+defaultAverage=6
+penalty="0.5"
