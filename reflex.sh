@@ -1,5 +1,5 @@
 #Change Path to app path
-cd /data/data/com.termux/files/home/tools/reflex
+#cd /data/data/com.termux/files/home/tools/reflex
 #Import functions
 source ./functions
 # Import config values
@@ -23,27 +23,25 @@ while true; do
     currentAverage=$(getAverageTime "$currentDb")
     # Create audio file list
     audioFileList=$(createAudioFileList "$currentDb" $audioFileExtension $recordsPath)
-    # Show a "Audio is playing now..." prompt
-    echo -e "\nAudio is playing now..."
     # Play the first file on db list
     playFirstFile "$audioFileList" $recordsPath
-    # Get the current date secs
-    startTime=$(date +%s)
+    # Get the current date miliseconds
+    startTime=$(($(date +%s%N)/1000000))
     # Show "Click any char for response"
     getInput "Press any char for response..."
     # Get the timeElapsed
-    timeElapsed=$(( $(date +%s) - $startTime ))
+    timeElapsed=$(( $(($(date +%s%N)/1000000)) - $startTime ))
     # Ask if the response was correct
     echo ""
     read -n1 -p "You answer right?(y/n): " answer
     # If the response was correct
     if [[ "$answer" == "y" ]]; then
     #   averageTime = (averageTime + timeMeasure) / 2
-        currentAverage=$(echo "($currentAverage + $timeElapsed)/2" | bc | awk '{printf "%.1f\n", $0}')
+        currentAverage=$(echo "($currentAverage + $timeElapsed)/2" | bc | awk '{printf "%.0f\n", $0}')
     # Else
     #   averageTime = averageTime * (1 + penalty)
     else
-        currentAverage=$(echo "($currentAverage * (1 + $penalty))" | bc | awk '{printf "%.1f\n", $0}')
+        currentAverage=$(echo "($currentAverage * (1 + $penalty))" | bc | awk '{printf "%.0f\n", $0}')
     fi
     # Update db with the new average
     updateDb "$(echo "$currentDb" | head -1 | cut -d " " -f 1,2)" $dbFile $currentAverage
