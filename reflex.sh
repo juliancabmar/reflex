@@ -1,5 +1,5 @@
 #Change Path to app path
-#cd /data/data/com.termux/files/home/tools/reflex
+cd /data/data/com.termux/files/home/tools/reflex
 #Import functions
 source ./functions
 # Import config values
