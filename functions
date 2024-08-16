@@ -53,7 +53,7 @@ function playFirstFile {
 
     file=$(echo "$db" | head -n 1)
     echo -e "\nAudio $file is playing now..."
-    #play-audio $(echo "$filePath/$file")
+    play-audio $(echo "$filePath/$file")
 }
 
 function getAverageTime {
