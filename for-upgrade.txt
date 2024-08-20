@@ -1,3 +1,4 @@
-- ver respuesta correcta ( echo "SOY KAISER SOZE" | cut -d " " -f 1- ) imprime desde 1 hacia adelante
++ ver respuesta correcta ( echo "SOY KAISER SOZE" | cut -d " " -f 1- ) imprime desde 1 hacia adelante
 + Calculo de tiempo con centesimas
-- ver numero de tarjetas estudiadas.
++ ver numero de tarjetas estudiadas.
++ gitignore a db.txt
