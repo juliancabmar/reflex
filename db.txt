@@ -1,4 +1,4 @@
-Mensajes 001 6000 #Esta es la respuesta de 001 #
+Mensajes 001 6000 #Esta es la respuesta de 001#
 Mensajes 002 6000 #Esta es la respuesta de 002#
 Mensajes 003 6000 #Esta es la respuesta de 003#
 Mensajes 004 6000 #Esta es la respuesta de 004#
@@ -8,7 +8,7 @@ Mensajes 007 6000 #Esta es la respuesta de 007#
 Mensajes 008 6000 #Esta es la respuesta de 008#
 Mensajes 009 6000 #Esta es la respuesta de 009#
 Mensajes 010 6000 #Esta es la respuesta de 010#
-Mensajes 011 6000 #Esta es la respuesta de 011#
+Mensajes 011 4144 #Esta es la respuesta de 011#
 Mensajes 012 3322 #Esta es la respuesta de 012#
 Mensajes 013 3431 #Esta es la respuesta de 013#
 Mensajes 014 4940 #Esta es la respuesta de 014#
