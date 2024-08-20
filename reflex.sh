@@ -52,6 +52,9 @@ while true; do
     fi
     # Update db with the new average
     updateDb "$(echo "$currentDb" | head -1 | cut -d " " -f 1,2)" $dbFile $currentAverage "$correctAnswer"
+    # Clean Screen
+    clear
+    # Show the counter
     echo -e "\nReflex count: $counter"
 # End Loop
 done
