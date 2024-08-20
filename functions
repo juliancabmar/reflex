@@ -15,13 +15,10 @@ function addNews {
         db=$(cut -d " " -f 1,2 $dbFile --output-delimiter "_") 
 
         news=$(echo -e "$filesList""\n""$db" | sort | uniq -u)
-        #echo -e "\n\nLISTA\n$filesList\n\nDB\n$db\n\nNEWS\n$news\n\n"
         
         for newFile in $(echo "$news"); do
                 echo $(echo "$newFile" | sed "s/_/ /") "$defaultAverage" >> $dbFile
         done
-        #echo "NUEVA DB"
-        #cat $dbFile
 }
 
 function filterByCategories {
@@ -66,7 +63,9 @@ function updateDb {
     dbKey=$1
     dbFile=$2
     newAverage=$3
-    #echo $dbFile
-    #echo $dbKey
-    sed -i "s/$dbKey.*/$dbKey $newAverage/" $dbFile > dbFile
+    answer=$4
+
+    echo $answer
+    
+    sed -i "s/$dbKey.*/$dbKey $newAverage #$answer#/" $dbFile > dbFile
 }
