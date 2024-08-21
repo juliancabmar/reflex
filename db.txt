@@ -1,18 +1,18 @@
-Mensajes 001 6000 #Esta es la respuesta de 001 #
-Mensajes 002 6000 #Esta es la respuesta de 002#
-Mensajes 003 6000 #Esta es la respuesta de 003#
-Mensajes 004 6000 #Esta es la respuesta de 004#
-Mensajes 005 6000 #Esta es la respuesta de 005#
-Mensajes 006 6000 #Esta es la respuesta de 006#
-Mensajes 007 6000 #Esta es la respuesta de 007#
-Mensajes 008 6000 #Esta es la respuesta de 008#
-Mensajes 009 6000 #Esta es la respuesta de 009#
-Mensajes 010 6000 #Esta es la respuesta de 010#
-Mensajes 011 6000 #Esta es la respuesta de 011#
-Mensajes 012 3322 #Esta es la respuesta de 012#
-Mensajes 013 3431 #Esta es la respuesta de 013#
-Mensajes 014 4940 #Esta es la respuesta de 014#
-Mensajes 015 5594 #Esta es la respuesta de 015#
-Mensajes 016 3581 #Esta es la respuesta de 016#
-Mensajes 017 4350 #Esta es la respuesta de 017#
-Mensajes 018 3934 #Esta es la respuesta de 018#
+Mensajes 001 1967 #Wow! ¿en serio?, parece que... (etiqueto la emocion), ¿Como fue... ? (indagar en los detalles para que la haga revivir las emociones en su cabeza)#
+Mensajes 002 1960 #Huy no! ¿en serio?, parece que... (etiqueto la emocion) ¿Como fue... ? (indagar en los detalles para que la haga revivir las emociones en su cabeza)#
+Mensajes 003 2150 #1ro agradecer por la informacion, y luego si se necesita profundizar#
+Mensajes 004 1719 #respira y dale tiempo para que tome conciencia de su reaccion... y luego serenamente etiqueta la ira con "Huy se ve que hice algo por lo que me queres matar, pero que hice para que me digas " refleja con una pregunta el insulto para obtener mas info y buscar aplicar empatia tactica#
+Mensajes 005 2191 #(Me gustaria o No tendria problema), parece que (etiqueta la emocion), solo necesitaria que me aseguraras (condiciones necesarias)#
+Mensajes 006 1620 #"Parece que tenes confianza en " objetivo final de la persuacion... "Supongamos que " argumento "vos confias en que" las otras premisas del Objetivo final "van a pasar"?#
+Mensajes 007 2089 #Wow! ¿en serio?, parece que... (etiqueto la emocion), ¿Como fue... ? (indagar en los detalles para que la haga revivir las emociones en su cabeza)#
+Mensajes 008 2035 #Wow! ¿en serio?, parece que... (etiqueto la emocion), ¿Como fue... ? (indagar en los detalles para que la haga revivir las emociones en su cabeza)#
+Mensajes 009 2080 #Huy no! ¿en serio?, parece que... (etiqueto la emocion) ¿Como fue... ? (indagar en los detalles para que la haga revivir las emociones en su cabeza)#
+Mensajes 010 1925 #Huy no! ¿en serio?, parece que... (etiqueto la emocion) ¿Como fue... ? (indagar en los detalles para que la haga revivir las emociones en su cabeza)#
+Mensajes 011 1655 #1ro agradecer por la informacion, y luego si se necesita profundizar#
+Mensajes 012 1974 #1ro agradecer por la informacion, y luego si se necesita profundizar#
+Mensajes 013 1606 #respira y dale tiempo para que tome conciencia de su reaccion... y luego serenamente etiqueta la ira con "Huy se ve que hice algo por lo que me queres matar, pero que hice para que me digas " refleja con una pregunta el insulto para obtener mas info y buscar aplicar empatia tactica#
+Mensajes 014 1919 #respira y dale tiempo para que tome conciencia de su reaccion... y luego serenamente etiqueta la ira con "Huy se ve que hice algo por lo que me queres matar, pero que hice para que me digas " refleja con una pregunta el insulto para obtener mas info y buscar aplicar empatia tactica#
+Mensajes 015 1975 #(Me gustaria o No tendria problema), parece que (etiqueta la emocion), solo necesitaria que me aseguraras (condiciones necesarias)#
+Mensajes 016 1817 #(Me gustaria o No tendria problema), parece que (etiqueta la emocion), solo necesitaria que me aseguraras (condiciones necesarias)#
+Mensajes 017 1447 #"Parece que tenes confianza en " objetivo final de la persuacion... "Supongamos que " argumento "vos confias en que" las otras premisas del Objetivo final "van a pasar"?#
+Mensajes 018 1759 #"Parece que tenes confianza en " objetivo final de la persuacion... "Supongamos que " argumento "vos confias en que" las otras premisas del Objetivo final "van a pasar"?#
