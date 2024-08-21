@@ -14,8 +14,6 @@ read categories
 counter=0
 # Start Loop
 while true; do
-    # Increase counter and show it
-    counter=$(($counter + 1))
     # Filter dbFile with categories and send value to currentDb variable
     currentDb=$(filterByCategories $dbFile $categories)
     # Wait with a prompt till the user is ready to begin
@@ -43,10 +41,9 @@ while true; do
     read -n1 -p "You answer right?(y/n): " answer
     # If the response was correct
     if [[ "$answer" == "y" ]]; then
-    #   averageTime = (averageTime + timeMeasure) / 2
         currentAverage=$(echo "($currentAverage + $timeElapsed)/2" | bc | awk '{printf "%.0f\n", $0}')
-    # Else
-    #   averageTime = averageTime * (1 + penalty)
+        # Increase counter
+        counter=$(($counter + 1))
     else
         currentAverage=$(echo "($currentAverage * (1 + $penalty))" | bc | awk '{printf "%.0f\n", $0}')
     fi

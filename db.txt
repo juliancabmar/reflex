@@ -7,7 +7,7 @@ Mensajes 006 6000 #Esta es la respuesta de 006#
 Mensajes 007 6000 #Esta es la respuesta de 007#
 Mensajes 008 6000 #Esta es la respuesta de 008#
 Mensajes 009 6000 #Esta es la respuesta de 009#
-Mensajes 010 6000 #Esta es la respuesta de 010#
+Mensajes 010 4805 #Esta es la respuesta de 010#
 Mensajes 011 4144 #Esta es la respuesta de 011#
 Mensajes 012 3322 #Esta es la respuesta de 012#
 Mensajes 013 3431 #Esta es la respuesta de 013#
